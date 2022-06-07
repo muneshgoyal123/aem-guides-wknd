@@ -17,10 +17,10 @@ data-sly-use.placeholderTemplate="core/wcm/components/commons/v1/templates.html"
           >
             <picture>
               <source
-                srcset="./../../../images/image1.png"
+                srcset="${item.image}"
                 media="(max-width: 600px)"
               />
-              <img src="./../../../images/image1.png" />
+              <img src="${item.image}" />
             </picture>
           </div>
           <div
@@ -29,14 +29,14 @@ data-sly-use.placeholderTemplate="core/wcm/components/commons/v1/templates.html"
             <div class="hero-carousel-content">
              
               <div class="bodyCopy">
-               
+                   ${item.description}
               </div>
             </div>
           </div>
         </sly>
         </div>
       </div>
-      </div>
+    </div>
     <div class="carousel-indicators">
       <button
         type="button"

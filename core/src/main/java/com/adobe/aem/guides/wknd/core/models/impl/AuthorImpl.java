@@ -10,19 +10,16 @@ import org.apache.sling.api.resource.Resource;
 import org.apache.sling.models.annotations.Default;
 import org.apache.sling.models.annotations.DefaultInjectionStrategy;
 import org.apache.sling.models.annotations.Model;
-//import org.apache.sling.models.annotations.Optional;
 import org.apache.sling.models.annotations.Required;
 import org.apache.sling.models.annotations.Via;
 import org.apache.sling.models.annotations.injectorspecific.ScriptVariable;
-//import org.slf4j.Logger;
-//import org.slf4j.LoggerFactory;
 import org.apache.sling.models.annotations.injectorspecific.ValueMapValue;
 
 
 @Model(adaptables = {SlingHttpServletRequest.class,Resource.class},adapters = Author.class,defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL,resourceType = AuthorImpl.RESOURCE_TYPE)
 public class AuthorImpl implements Author 
 {
-    //private static final Logger log=LoggerFactory.getLogger(AuthorImpl.class); 
+    
     protected static final String RESOURCE_TYPE = "wknd/components/author";
 
     @ScriptVariable

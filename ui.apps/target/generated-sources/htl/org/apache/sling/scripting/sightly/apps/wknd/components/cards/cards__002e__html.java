@@ -34,10 +34,13 @@ public final class cards__002e__html extends RenderUnit {
                                 RenderContext renderContext) {
 // Main Template Body -----------------------------------------------------------------------------
 
-Object _dynamic_properties = bindings.get("properties");
-out.write("<section>\r\n  <div class=\"img-double-cards-container\">\r\n    <div class=\"row\">\r\n      <div class=\"col-md-6\">\r\n        <img");
+Object _global_model = null;
+Object _global_placeholdertemplate = null;
+_global_model = renderContext.call("use", com.adobe.aem.guides.wknd.core.models.Cards.class.getName(), obj());
+_global_placeholdertemplate = renderContext.call("use", "core/wcm/components/commons/v1/templates.html", obj());
+out.write("\r\n  <section>\r\n    <div class=\"img-double-cards-container\">\r\n      <div class=\"row\">\r\n        <div class=\"col-md-6\">\r\n          <img");
 {
-    Object var_attrvalue0 = renderContext.getObjectModel().resolveProperty(_dynamic_properties, "image1");
+    Object var_attrvalue0 = renderContext.getObjectModel().resolveProperty(_global_model, "image1");
     {
         Object var_attrcontent1 = renderContext.call("xss", var_attrvalue0, "uri");
         {
@@ -56,9 +59,9 @@ out.write("<section>\r\n  <div class=\"img-double-cards-container\">\r\n    <div
         }
     }
 }
-out.write("/>\r\n      </div>\r\n      <div class=\"col-md-6\">\r\n        <img");
+out.write("/>\r\n        </div>\r\n        <div class=\"col-md-6\">\r\n          <img");
 {
-    Object var_attrvalue4 = renderContext.getObjectModel().resolveProperty(_dynamic_properties, "image2");
+    Object var_attrvalue4 = renderContext.getObjectModel().resolveProperty(_global_model, "image2");
     {
         Object var_attrcontent5 = renderContext.call("xss", var_attrvalue4, "uri");
         {
@@ -77,9 +80,9 @@ out.write("/>\r\n      </div>\r\n      <div class=\"col-md-6\">\r\n        <img"
         }
     }
 }
-out.write("/>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</section>\r\n<div class=\"bio-card card\">\r\n  <img");
+out.write("/>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </section>\r\n  <div class=\"bio-card card\">\r\n    <img");
 {
-    Object var_attrvalue8 = renderContext.getObjectModel().resolveProperty(_dynamic_properties, "image3");
+    Object var_attrvalue8 = renderContext.getObjectModel().resolveProperty(_global_model, "image3");
     {
         Object var_attrcontent9 = renderContext.call("xss", var_attrvalue8, "uri");
         {
@@ -98,19 +101,19 @@ out.write("/>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</section>\r\n<div cl
         }
     }
 }
-out.write(" class=\"card-img-top\"/>\r\n  <div class=\"card-body\">\r\n    <h5 class=\"card-title\">");
+out.write(" class=\"card-img-top\"/>\r\n    <div class=\"card-body\">\r\n      <h5 class=\"card-title\">");
 {
-    Object var_12 = renderContext.call("xss", renderContext.getObjectModel().resolveProperty(_dynamic_properties, "title"), "text");
+    Object var_12 = renderContext.call("xss", renderContext.getObjectModel().resolveProperty(_global_model, "title"), "text");
     out.write(renderContext.getObjectModel().toString(var_12));
 }
-out.write("</h5>\r\n    <div class=\"card-text\">");
+out.write("</h5>\r\n      <div class=\"card-text\">");
 {
-    Object var_13 = renderContext.call("xss", renderContext.getObjectModel().resolveProperty(_dynamic_properties, "text"), "text");
+    Object var_13 = renderContext.call("xss", renderContext.getObjectModel().resolveProperty(_global_model, "text"), "text");
     out.write(renderContext.getObjectModel().toString(var_13));
 }
-out.write("</div>\r\n  </div>\r\n</div>\r\n<div class=\"card patient_story-card\">\r\n  <img");
+out.write("</div>\r\n    </div>\r\n  </div>\r\n  <div class=\"card patient_story-card\">\r\n    <img");
 {
-    Object var_attrvalue14 = renderContext.getObjectModel().resolveProperty(_dynamic_properties, "image4");
+    Object var_attrvalue14 = renderContext.getObjectModel().resolveProperty(_global_model, "image4");
     {
         Object var_attrcontent15 = renderContext.call("xss", var_attrvalue14, "uri");
         {
@@ -129,17 +132,17 @@ out.write("</div>\r\n  </div>\r\n</div>\r\n<div class=\"card patient_story-card\
         }
     }
 }
-out.write(" class=\"card-img-top\" alt=\"patient_story-card-image\"/>\r\n  <div class=\"card-body\">\r\n    <h5 class=\"card-title\">");
+out.write(" class=\"card-img-top\" alt=\"patient_story-card-image\"/>\r\n    <div class=\"card-body\">\r\n      <h5 class=\"card-title\">");
 {
-    Object var_18 = renderContext.call("xss", renderContext.getObjectModel().resolveProperty(_dynamic_properties, "title1"), "text");
+    Object var_18 = renderContext.call("xss", renderContext.getObjectModel().resolveProperty(_global_model, "title1"), "text");
     out.write(renderContext.getObjectModel().toString(var_18));
 }
-out.write("</h5>\r\n    <p class=\"card-text\">");
+out.write("</h5>\r\n      <p class=\"card-text\">");
 {
-    Object var_19 = renderContext.call("xss", renderContext.getObjectModel().resolveProperty(_dynamic_properties, "history"), "text");
+    Object var_19 = renderContext.call("xss", renderContext.getObjectModel().resolveProperty(_global_model, "history"), "text");
     out.write(renderContext.getObjectModel().toString(var_19));
 }
-out.write("</p>\r\n  </div>\r\n</div>\r\n");
+out.write("</p>\r\n    </div>\r\n  </div>\r\n\r\n");
 
 
 // End Of Main Template Body ----------------------------------------------------------------------

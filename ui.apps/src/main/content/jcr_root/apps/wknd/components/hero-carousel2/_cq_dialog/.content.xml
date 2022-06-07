@@ -33,18 +33,10 @@
                                         name="./description"/>
                                 <image
                                     jcr:primaryType="nt:unstructured"
-                                    sling:resourceType="granite/ui/components/foundation/form/fileupload"
-                                    autoStart="{Boolean}false"
-                                    class="cq-droptarget"
-                                    fieldLabel="Banner"
-                                    fileNameParameter="./bannerImgName"
-                                    fileReferenceParameter="./image"
-                                    mimeTypes="[image]"
-                                    multiple="{Boolean}false"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                    fieldDescription="enter image path"
+                                    fieldLabel="Image"
                                     name="./image"
-                                    title="Upload Image"
-                                    uploadUrl="${suffix.path}"
-                                    useHTML5="{Boolean}true"
                                     rootPath="/content/dam"/>
                                     
                             </items>
